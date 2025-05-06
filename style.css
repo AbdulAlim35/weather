@@ -1,0 +1,12 @@
+@import "tailwindcss";
+#ui-id-1 {
+  width: 20px;
+  max-height: 300px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 3%;
+  overflow: hidden;
+  background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+  color: white;
+  border: none;
+}
