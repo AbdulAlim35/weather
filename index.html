@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
+    <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -17,14 +18,13 @@
     />
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
-    <link rel="stylesheet" href="./assets/index-ip4bZ3Vy.css" />
   </head>
   <body class="flex justify-center w-full h-full overflow-hidden">
     <div class="relative">
       <img
         id="img"
         class="md:w-[20rem] w-[40rem] h-[59rem] md:h-[35rem] md:rounded-3xl bject-covero overflow-hidden"
-        src="./43e17aa3c2ba523273401a7f7a130a8c.gif"
+        src="43e17aa3c2ba523273401a7f7a130a8c.gif"
         alt=""
       />
       <div class="absolute inset-0 bg-black opacity-[0.1] md:rounded-3xl"></div>
@@ -73,7 +73,7 @@
         <div class="flex items-center flex-col">
           <img
             class="w-[80px]"
-            src="./wired-outline-447-water-drop-hover-split.gif"
+            src="wired-outline-447-water-drop-hover-split.gif"
             alt=""
           />
           <p class="text-white font-medium md:text-[18px] text-[20px]">
@@ -84,7 +84,7 @@
           </p>
         </div>
         <div class="flex items-center flex-col">
-          <img class="w-[100px]" src="./Animation - 1745686147481.gif" alt="" />
+          <img class="w-[100px]" src="Animation - 1745686147481.gif" alt="" />
           <p class="text-white font-medium md:text-[18px] text-[20px]">
             Wind Speed
           </p>
@@ -98,7 +98,7 @@
       </div>
       <div class="flex justify-center items-center md:py-12 py-19">
         <button
-          class="text-[28px] border-2 text-[#2980b9] bg-neutral-600 md:w-12 md:h-12 w-14 h-14 rounded-full cursor-pointer"
+          class="text-[28px] border-2 text-[#2980b9] bg-neutral-600 md:w-12 md:h-12 w-14 h-14 rounded-full cursor-pointer "
           id="btn"
         >
           +
@@ -136,6 +136,7 @@
         $("#dity").text(hum);
 
         let weather = response.data.weather[0].main;
+        console.log(weather);
 
         let img = "";
 
@@ -184,7 +185,7 @@
             } else {
               img = "bluesea_banin1ru.gif";
             }
-          } else if (weather == "Haze") {
+          }else if (weather == "Haze") {
             img = "b.gif";
           }
         } else {
@@ -208,7 +209,7 @@
             } else {
               img = "Best Animations.gif";
             }
-          } else if (weather == "Haze") {
+          }else if (weather == "Haze") {
             img = "a.gif";
           }
         }
